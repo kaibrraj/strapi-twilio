@@ -10,4 +10,8 @@ module.exports = ({ env }) => ({
         roles: ["strapi-super-admin", "strapi-editor", "strapi-author"],
       },
     },
+    'events': {
+      enabled: true,
+      resolve: './src/plugins/events'
+    },
   });
