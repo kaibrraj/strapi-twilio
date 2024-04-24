@@ -4,24 +4,29 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "EventStartDate": {
+      "type": "date"
+    },
+    "EventEndDate": {
+      "type": "date"
+    },
     "EventName": {
       "type": "string"
     },
-    "Description": {
+    "EventPrizes": {
       "type": "blocks"
     },
-    "Date": {
-      "type": "datetime"
-    },
-    "ReplyRequired": {
-      "type": "boolean"
+    "Timezone": {
+      "type": "customField",
+      "customField": "plugin::timezone-select.timezone"
     }
   }
 }
